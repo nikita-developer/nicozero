@@ -1,0 +1,31 @@
+
+.advantages {
+    width: 270px;
+}
+
+.advantages__item {
+    display: flex;
+    align-items: center;
+    background-color: #dde0ea;
+    border-radius: 8px;
+    padding: 10px 15px;
+
+    & + & {
+        margin-top: 20px;
+    }
+}
+
+.advantages__media {
+    margin-right: 20px;
+}
+
+.advantages__title {
+    color: #43a8c5;
+    font-weight: 700;
+
+    & span {
+        display: block;
+        color: #171717;
+        font-weight: 600;
+    }
+}

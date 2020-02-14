@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('block/head') %>
+    <body>
+        <section class="section section_face">
+            <div class="container">
+                <div class="face">
+                    <div class="face__head">
+                        <div class="logo"><img src="../media/logo.png" alt=""></div>
+                    </div>
+                    <div class="face__box">
+                        <h1 class="face__title">Бросить
+                            <span>курить</span>
+                            <span>легко!</span></h1>
+                        <%- include('block/advantages') %>
+                    </div>
+                    <div class="face__box">
+                        <%- include('block/order') %>
+                        <%- include('block/eggs') %>
+                    </div>
+                    <div class="face__product">
+                        <img src="../media/face/product.png" alt="">
+                        <div class="face__arrow"><img src="../media/face/arrow.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_effects">
+            <div class="container">
+                <%- include('block/effects') %>
+            </div>
+        </section>
+        <%- include('block/script') %>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+
+.wraning__title {
+    margin-bottom: 10px;
+    font-size: 62px;
+    line-height: 57px;
+    font-weight: 800;
+    color: #ef265a;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+        font-size: 62px;
+    }
+}
+
+.wraning__subTitle {
+    font-size: 43px;
+    font-weight: 600;
+    color: #171717;
+    line-height: 43px;
+    text-transform: uppercase;
+
+    & span {
+        display: block;
+        font-size: 43px;
+    }
+}

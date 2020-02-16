@@ -1,0 +1,60 @@
+
+.memories {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.memories_subTitle {
+    margin-bottom: 10px;
+    max-width: 330px;
+    font-size: 43px;
+    font-weight: 600;
+    color: #171717;
+    line-height: 43px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.memories_title {
+    max-width: 330px;
+    font-size: 62px;
+    line-height: 57px;
+    font-weight: 800;
+    color: #ef265a;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.memories__box {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 376px;
+}
+
+.memories__item {
+    max-width: 148px;
+    margin-bottom: 40px;
+}
+
+.memories__media {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 148px;
+    height: 148px;
+    border-radius: 50%;
+    background: rgb(255,211,195);
+    background: linear-gradient(to top, rgba(255,211,195,1) 0%, rgba(251,175,172,1) 100%);
+}
+
+.memories__name {
+    position: relative;
+    font-weight: 800;
+    color: #ef265a;
+    text-align: center;
+    text-transform: uppercase;
+}

@@ -2,34 +2,146 @@
 <html lang="en">
     <%- include('block/head') %>
     <body>
-        <section class="section section_face">
-            <div class="container">
-                <div class="face">
-                    <div class="face__head">
-                        <div class="logo"><img src="../media/logo.png" alt=""></div>
+        <div class="wrap">
+            <section class="section section_face">
+                <div class="container">
+                    <div class="face">
+                        <div class="face__head">
+                            <div class="logo"><img src="../media/logo.png" alt=""></div>
+                        </div>
+                        <div class="face__box">
+                            <h1 class="face__title">Бросить
+                                <span>курить</span>
+                                <span>легко!</span></h1>
+                            <%- include('block/advantages') %>
+                        </div>
+                        <div class="face__box">
+                            <%- include('block/order') %>
+                            <%- include('block/eggs') %>
+                        </div>
+                        <div class="face__product">
+                            <img src="../media/face/product.png" alt="">
+                            <div class="face__arrow"><img src="../media/face/arrow.png" alt=""></div>
+                        </div>
                     </div>
-                    <div class="face__box">
-                        <h1 class="face__title">Бросить
-                            <span>курить</span>
-                            <span>легко!</span></h1>
-                        <%- include('block/advantages') %>
+                </div>
+            </section>
+            <section class="section section_effects">
+                <div class="container">
+                    <div class="effects">
+                        <div class="effects__box">
+                            <div class="effects__title">
+                                Когда вы выкурили <span>свою <span>первую сигарету,</span></span>
+                            </div>
+                            <div class="effects__subtitle">
+                                вам точно хотелось остаться курильщиком
+                            </div>
+                            <div class="effects__description">
+                                на всю жизнь?
+                            </div>
+                            <div class="effects__events">
+                                наведите на фото
+                                <img src="../media/effects/arrow-right.png" alt="">
+                            </div>
+                        </div>
+                        <div class="effects__media">
+                            <div class="effects__fadeLine">
+                                <img src="../media/effects/fadeLine.png" alt="">
+                            </div>
+                            <div class="effects__face">
+                                <img src="../media/effects/human1.png" alt="">
+                                <img src="../media/effects/human2.png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="face__box">
-                        <%- include('block/order') %>
-                        <%- include('block/eggs') %>
+                </div>
+            </section>
+            <section class="section section_warning">
+                <div class="container">
+                    <div class="facts">
+                        <div class="facts__item">
+                            <div class="facts__content">
+                                <div class="facts__nomber">1.</div>
+                                <div class="facts__subTitle">Никотин – это вещество, которое вызывает привыкание с первой дозы.
+                                    <span>По силе воздействия на организм он превосходит даже героин, поскольку вызывает зависимость с первой затяжки.</span>
+                                </div>
+                            </div>
+                            <div class="facts__media">
+                                <img src="../media/facts/img1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="facts__item facts__item_right">
+                            <div class="facts__content">
+                                <div class="facts__nomber">2.</div>
+                                <div class="facts__subTitle">До того, как вы впервые закурили, наверняка были уверены:
+                                    <span>Я смогу бросить в любой момент! В действительности это гораздо сложнее, чем кажется.</span>
+                                </div>
+                            </div>
+                            <div class="facts__media">
+                                <img src="../media/facts/img2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="facts__item">
+                            <div class="facts__content">
+                                <div class="facts__nomber">3.</div>
+                                <div class="facts__subTitle">Возможно, вы испытываете стыд или неприязнь к самому себе из-за того, что не можете бросить курить самостоятельно.
+                                    <span>Вы постоянно слышите о вреде курения и уже выработали иммунитет к ужасающим историям курильщиков.</span>
+                                </div>
+                            </div>
+                            <div class="facts__media">
+                                <img src="../media/facts/img3.jpg" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="face__product">
-                        <img src="../media/face/product.png" alt="">
-                        <div class="face__arrow"><img src="../media/face/arrow.png" alt=""></div>
+                    <div class="warning section__warning">
+                        <div class="wraning__title"><span>Запах сигарет</span> преследует <span>вас повсюду,</span> </div>
+                        <div class="wraning__subTitle">от него не спасает <span>ни жвачка, ни духи.</span></div>
+                    </div>
+                </div>
+            </section>
+            <div class="section section_cause">
+                <div class="container">
+                    <div class="cause">
+                        <div class="cause__title">Однако вы <span>до сих пор</span> <span>являетесь</span> курильщиком.</div>
+                        <div class="cause__subTitle">Так почему вам <span>на самом деле</span> хочется курить?</div>
+                        <div class="cause__description">
+                            <span>При постоянном курении в мозге резко вырастает число ацетилхолиновых рецепторов (именно они обеспечивают резкий выброс гормонов радости), а их чувствительность падает.</span>
+
+                            Эти рецепторы в норме активируются особым органическим соединением ацетилхолином, очень похожим по структуре на никотин. При повышении числа рецепторов собственных запасов ацетилхолина перестает хватать. И чтобы чувствовать себя счастливым, человеку приходится постоянно увеличивать дозу никотина — так формируется физиологическая зависимость.
+                        </div>
+                        <div class="cause__info">
+                            При первом попадании в организм никотина вы сразу же становитесь зависимым от этого токсического вещества. <span>Желание закурить контролирует ваш мозг, меняет ваши планы, поведение и даже стиль общения.</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="section section_effects">
-            <div class="container">
-                <%- include('block/effects') %>
+            <div class="section section_memories">
+                <div class="container">
+                    <div class="memories">
+                        <div class="memories_subTitle">Вспомните, когда вам</div>
+                        <div class="memories_title">сильнее всего хочется курить?</div>
+                        <div class="memories__box">
+                            <div class="memories__item">
+                                <div class="memories__media"><img src="../media/memories/img1.png" alt=""></div>
+                                <div class="memories__name">Сразу после пробуждения</div>
+                            </div>
+                            <div class="memories__item">
+                                <div class="memories__media"><img src="../media/memories/img2.png" alt=""></div>
+                                <div class="memories__name">В самолете</div>
+                            </div>
+                            <div class="memories__item">
+                                <div class="memories__media"><img src="../media/memories/img3.png" alt=""></div>
+                                <div class="memories__name">У некурящих гостей</div>
+                            </div>
+                            <div class="memories__item">
+                                <div class="memories__media"><img src="../media/memories/img4.png" alt=""></div>
+                                <div class="memories__name">После принятого алкоголя</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>
         <%- include('block/script') %>
     </body>
 </html>

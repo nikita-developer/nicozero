@@ -3,3 +3,23 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media(max-width: 1280px) {
+    .eggs__item {
+        width: 70px;
+    }
+}
+
+@media(max-width: 768px) {
+    .eggs {
+        justify-content: flex-start;
+    }
+
+    .eggs__item {
+        width: 96px;
+
+        & + & {
+            margin-left: 15px;
+        }
+    }
+}

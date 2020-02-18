@@ -42,8 +42,12 @@
 .face__product {
     position: absolute;
     width: 100%;
+    height: 713px;
     z-index: -1;
-    bottom: -250px;
+    bottom: -215px;
+    background-image: url('../media/face/product.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
 
     & img {
         margin-right: auto;
@@ -52,6 +56,93 @@
 }
 
 .face__arrow {
-    margin-right: auto;
-    margin-left: auto;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+}
+
+@media(max-width: 1280px) {
+    .face__title {
+        font-size: 50px;
+        & span {
+            font-size: 50px;
+        }
+    }
+
+    .face__product {
+        bottom: -120px;
+        background-image: url('../media/face/product-1280.png');
+        background-position: 160px bottom;
+    }
+}
+
+@media(max-width: 768px) {
+    .face {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-bottom: 360px;
+    }
+
+    .face__title {
+        font-size: 40px;
+        margin-bottom: 25px;
+
+        & span {
+            display: inline;
+            font-size: 40px;
+        }
+    }
+
+    .face__box_eggs {
+        margin-top: 25px;
+    }
+
+    .face__product {
+        background-position-x: 28px;
+        bottom: 0;
+        background-image: url('../media/face/product-768.png');
+    }
+
+    .face__arrow {
+        bottom: -40px;
+        width: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media(max-width: 480px) {
+    .face {
+        padding-bottom: 290px;
+    }
+
+    .face__title {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        line-height: 1.2;
+
+        & span {
+            display: inline;
+            text-align: center;
+            font-size: 24px;
+
+            &:last-child {
+                display: inline;
+            }
+        }
+    }
+
+    .face__head {
+        display: flex;
+        justify-content: center;
+    }
+
+    .face__product {
+        background-position-x: center;
+        bottom: 0;
+        background-image: url('../media/face/product-480.png');
+    }
 }

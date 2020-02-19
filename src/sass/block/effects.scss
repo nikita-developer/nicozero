@@ -7,6 +7,7 @@
 .effects__box {
     position: relative;
     max-width: 480px;
+    z-index: 2;
 }
 
 .effects__title {
@@ -67,6 +68,18 @@
     position: absolute;
     bottom: -210px;
     right: -320px;
+    transition: 3s opacity;
+
+    &:hover {
+        & .effects__fadeLine {
+            transform: translateY(800px);
+        }
+
+        & .effects__face {
+            animation: spin 1s linear;
+            animation-fill-mode: forwards;
+        }
+    }
 }
 
 .effects__face {
@@ -75,22 +88,37 @@
     background-image: url('../media/effects/human1.png');
     background-repeat: no-repeat;
     background-position: right bottom;
+    animation: spin2 1s linear;
 }
 
 .effects__fadeLine {
     position: absolute;
     transform: translateY(40px);
+    transition: 1s transform;
 }
 
 @media(max-width: 1280px) {
+
     .effects__media {
         right: 0;
+
+        &:hover {
+            & .effects__fadeLine {
+                transform: translateY(400px);
+            }
+
+            & .effects__face {
+                animation: spin-1280 1s linear;
+                animation-fill-mode: forwards;
+            }
+        }
     }
 
     .effects__face {
         width: 500px;
         height: 430px;
         background-image: url('../media/effects/human1-1280.png');
+        animation: spin2-1280 1s linear;
     }
 
     .effects__title {
@@ -125,6 +153,7 @@
             margin-left: -5px;
         }
     }
+
 }
 
 @media(max-width: 768px) {
@@ -163,12 +192,24 @@
 
     .effects__media {
         position: static;
+
+        &:hover {
+            & .effects__fadeLine {
+                transform: translateY(240px);
+            }
+
+            & .effects__face {
+                animation: spin-480 1s linear;
+                animation-fill-mode: forwards;
+            }
+        }
     }
 
     .effects__face {
         width: 320px;
         height: 276px;
-        background-image: url('../media/effects/human2-480.png');
+        background-image: url('../media/effects/human1-480.png');
+        animation: spin2-480 1s linear;
         background-position: center bottom;
     }
 }
@@ -192,5 +233,59 @@
 
     .effects__description {
         font-size: 34px;
+    }
+}
+
+@keyframes spin {
+    0% {
+
+    }
+    100% {
+        background-image: url('../media/effects/human2.png');
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        background-image: url('../media/effects/human2.png');
+    }
+    100% {
+        background-image: url('../media/effects/human1.png');
+    }
+}
+
+@keyframes spin-1280 {
+    0% {
+
+    }
+    100% {
+        background-image: url('../media/effects/human2-1280.png');
+    }
+}
+
+@keyframes spin2-1280 {
+    0% {
+        background-image: url('../media/effects/human2-1280.png');
+    }
+    100% {
+        background-image: url('../media/effects/human1-1280.png');
+    }
+}
+
+@keyframes spin-480 {
+    0% {
+
+    }
+    100% {
+        background-image: url('../media/effects/human2-480.png');
+    }
+}
+
+@keyframes spin2-480 {
+    0% {
+        background-image: url('../media/effects/human2-480.png');
+    }
+    100% {
+        background-image: url('../media/effects/human1-480.png');
     }
 }

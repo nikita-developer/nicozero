@@ -78,6 +78,7 @@
     }
 
     &_product {
+        z-index: 1;
         padding-top: 120px;
         padding-bottom: 150px;
         margin-top: -200px;
@@ -86,6 +87,28 @@
         background-position: center bottom;
         background-color: #fff;
         border-radius: 50%;
+    }
+
+    &_professional {
+        overflow: hidden;
+        padding-top: 250px;
+        margin-top: -250px;
+        background-image: url("../media/section/professional.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #fff;
+        background-size: cover;
+        border-radius: 0 0 50% 50%;
+    }
+
+    &_reviews {
+        padding-top: 60px;
+    }
+
+    &_fake {
+        background-image: url("../media/section/fake.png");
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 

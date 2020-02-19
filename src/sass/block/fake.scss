@@ -1,0 +1,41 @@
+
+.fake {
+    display: flex;
+    max-height: 366px;
+    border-radius: 7px;
+    border: 3px solid #e12355;
+    background-color: #fff;
+}
+
+.fake__box {
+    padding: 70px 0 70px 60px;
+}
+
+.fake__title {
+    font-size: 56px;
+    line-height: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #ef265a;
+    text-transform: uppercase;
+}
+
+.fake__description {
+    font-size: 19px;
+    line-height: 1.2;
+}
+
+.fake__media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    background: rgb(255,255,255);
+    background: linear-gradient(103deg, rgba(255,255,255,1) 22%, rgba(225,35,85,1) 22%, rgba(225,35,85,1) 100%);
+
+    & img {
+        width: 366px;
+        height: 528px;
+        max-width: none;
+    }
+}

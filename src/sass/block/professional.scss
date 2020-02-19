@@ -13,6 +13,10 @@
         max-width: 650px;
         background-color: #f6f6f9;
     }
+
+    &_human {
+        position: relative;
+    }
 }
 
 .professional__title {
@@ -66,7 +70,101 @@
 }
 
 .professional__media {
-    & img {
-        margin-bottom: -40px;
+    position: absolute;
+    background-image: url('../media/professional/human.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    width: 372px;
+    height: 774px;
+}
+
+@media(max-width: 1280px) {
+    .professional__title {
+        font-size: 48px;
+        line-height: 1;
+    }
+
+    .professional__description {
+        font-size: 16px;
+
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    .professional__box {
+        &_doc {
+            max-width: 485px;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+    }
+
+    .professional__media {
+        width: 250px;
+        height: 760px;
+        background-image: url('../media/professional/human-1280.png');
+    }
+}
+
+@media(max-width: 768px) {
+    .professional__title {
+        font-size: 38px;
+    }
+
+    .professional__subTitle {
+        font-size: 18px;
+    }
+
+    .professional__description {
+        font-size: 14px;
+        line-height: 20px;
+
+        & span {
+            font-size: 14px;
+        }
+    }
+
+    .professional__box {
+        &_doc {
+            max-width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        &_human {
+            display: none;
+        }
+    }
+
+    .professional__media {
+        background-image: none;
+    }
+}
+
+@media(max-width: 480px) {
+    .professional__title {
+        font-size: 28px;
+    }
+
+    .professional__subTitle {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+
+    .professional__box {
+        &_doc {
+            margin-top: 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    .professional__name {
+        font-size: 18px;
+    }
+
+    .professional__position {
+        font-size: 14px;
     }
 }

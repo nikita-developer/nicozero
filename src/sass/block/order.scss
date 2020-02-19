@@ -93,6 +93,7 @@
     cursor: pointer;
     background: rgb(67,168,197);
     background: linear-gradient(to right, rgba(67,168,197,1) 0%, rgba(83,180,78,1) 100%);
+    transition: .3s background;
 
     &:hover {
         background: rgb(83,180,78);

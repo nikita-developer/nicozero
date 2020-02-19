@@ -82,3 +82,122 @@
     line-height: 22px;
     font-weight: 500;
 }
+
+
+@media(max-width: 1280px) {
+    .product__title {
+        font-size: 48px;
+    }
+
+    .product__subTitle {
+        margin-bottom: 25px;
+        font-size: 28px;
+
+        & span {
+            font-size: 28px;
+        }
+    }
+
+    .product__name {
+        font-size: 22px;
+        margin-bottom: 5px;
+        line-height: 1;
+
+        & span {
+            font-size: 22px;
+        }
+    }
+
+    .product__description {
+        font-size: 16px;
+        line-height: 1.2;
+    }
+}
+
+@media(max-width: 768px) {
+    .product__title {
+        font-size: 38px;
+        line-height: 1;
+    }
+
+    .product__subTitle {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 1;
+
+        & span {
+            font-size: 18px;
+        }
+    }
+
+    .product__media {
+        width: 100px;
+        height: 100px;
+    }
+
+    .product__name {
+        font-size: 18px;
+
+        & span {
+            font-size: 18px;
+        }
+    }
+
+    .product__description {
+        font-size: 14px;
+        max-width: 167px;
+    }
+}
+
+@media(max-width: 480px) {
+    .product__title {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .product__subTitle {
+        font-size: 16px;
+        line-height: 1.2;
+
+        & span {
+            font-size: 16px;
+        }
+    }
+
+    .product__box {
+        flex-direction: column;
+    }
+
+    .product__item {
+        min-height: 100px;
+        position: relative;
+        padding-left: 115px;
+        width: 100%;
+        margin-bottom: 25px;
+
+        &:nth-of-type(2n) {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .product__media {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .product__description {
+        max-width: 100%;
+    }
+
+    .product__name {
+        & span {
+            display: inline;
+        }
+    }
+}

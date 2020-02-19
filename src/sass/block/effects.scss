@@ -172,3 +172,25 @@
         background-position: center bottom;
     }
 }
+
+@media (max-width: 480px) {
+    .effects__title {
+        font-size: 18px;
+
+        & span {
+            font-size: 18px;
+
+            & span {
+                font-size: 18px;
+            }
+        }
+    }
+
+    .effects__subtitle {
+        font-size: 23px;
+    }
+
+    .effects__description {
+        font-size: 34px;
+    }
+}

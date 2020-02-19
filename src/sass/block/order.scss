@@ -99,3 +99,55 @@
         background: linear-gradient(to right, rgba(83,180,78,1) 0%, rgba(67,168,197,1) 100%);
     }
 }
+
+@media(max-width: 1280px) {
+    .order {
+        width: 250px;
+    }
+
+    .order__title {
+        font-size: 22px;
+
+        & span {
+            font-size: 22px;
+        }
+    }
+
+    .order__field {
+        height: 45px;
+    }
+
+    .order__item {
+        & + & {
+            margin-top: 10px;
+        }
+    }
+
+    .order__btn {
+        margin-top: 10px;
+        padding: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+    .order {
+        width: 100%;
+        padding-top: 40px;
+    }
+
+    .order__title {
+        & span {
+            display: inline;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .order__title {
+        font-size: 20px;
+
+        & span {
+            font-size: 20px;
+        }
+    }
+}

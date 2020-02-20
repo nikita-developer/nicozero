@@ -13,12 +13,10 @@ $(document).ready(function() {
     wow.init();
 
     $('.js-effects__media').hover(function() {
-        $('.effects__face_before').fadeOut();
-        $('.effects__face_after').fadeIn();
-        console.log(1);
+        $('.effects__face_before').stop().fadeOut(1000)
+        $('.effects__face_after').stop().fadeIn(1000)
     }, function() {
-        $('.effects__face_after').fadeOut();
-        $('.effects__face_before').fadeIn();
-        console.log(2);
+        $('.effects__face_after').stop().fadeOut(1000)
+        $('.effects__face_before').stop().fadeIn(1000)
     });
 });

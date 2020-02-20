@@ -19,4 +19,13 @@ $(document).ready(function() {
         $('.effects__face_after').stop().fadeOut(1000)
         $('.effects__face_before').stop().fadeIn(1000)
     });
+
+    setTimeout(function() {
+        $('body').addClass('loaded');
+    }, 600);
+
+    $('.support__name').click(function () {
+        $(this).next('.support__description').slideToggle()
+        $(this).children('.support__indikator').toggleClass('support__indikator_active')
+    })
 });

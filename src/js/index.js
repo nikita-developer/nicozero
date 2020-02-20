@@ -1,15 +1,24 @@
 
 $(document).ready(function() {
-    var wow = new WOW({
-            boxClass:     'wow',      // класс, скрывающий элемент до момента отображения на экране (по умолчанию, wow)
-            animateClass: 'animated', // класс для анимации элемента (по умолчанию, animated)
-            offset:       0,          // расстояние в пикселях от нижнего края браузера до верхней границы элемента, необходимое для начала анимации (по умолчанию, 0)
-            mobile:       true,       // включение/отключение WOW.js на мобильных устройствах (по умолчанию, включено)
-            live:         true,       // поддержка асинхронно загруженных элементов (по умолчанию, включена)
-            scrollContainer: null     // селектор прокручивающегося контейнера (опционально, по умолчанию, window)
+    var wow = new WOW
+        ({
+            boxClass: 'wow',
+            animateClass: 'animated',
+            offset: 0,
+            mobile: true,
+            live: true,
+            scrollContainer: null
         }
     );
-
     wow.init();
 
+    $('.js-effects__media').hover(function() {
+        $('.effects__face_before').fadeOut();
+        $('.effects__face_after').fadeIn();
+        console.log(1);
+    }, function() {
+        $('.effects__face_after').fadeOut();
+        $('.effects__face_before').fadeIn();
+        console.log(2);
+    });
 });

@@ -1,12 +1,14 @@
 
 .facts__item {
-    display: flex;
-    align-items: center;
+    position: relative;
+    padding-right: 429px;
     margin-left: -110px;
     background-color: #fff;
     border: 3px solid #ef265a;
     border-radius: 7px;
     font-weight: 500;
+    min-height: 371px;
+    max-height: 371px;
 
     & + & {
         margin-top: 50px;
@@ -23,11 +25,17 @@
 }
 
 .facts__content {
-    display: flex;
-    padding: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 429px);
+    padding: 45px 45px 45px 150px;
 }
 
 .facts__nomber {
+    position: absolute;
+    left: 45px;
+    top: 50px;
     margin-right: 40px;
     font-size: 112px;
     color: #e6e6e6;
@@ -49,12 +57,16 @@
 }
 
 .facts__media {
+    position: absolute;
+    top: 0;
+    right: 0;
     min-width: 429px;
 }
 
 @media(max-width: 1280px) {
     .facts__item {
         margin-left: 0;
+        min-height: 304px;
 
         &_right {
             margin-right: 0;
@@ -62,13 +74,12 @@
     }
 
     .facts__content {
-        padding: 15px;
-        flex-direction: column;
+        padding: 15px 15px 15px 70px;
     }
 
     .facts__nomber {
-        margin-right: 0;
-        margin-bottom: 15px;
+        top: 15px;
+        left: 15px;
         font-size: 60px;
     }
 
@@ -91,7 +102,11 @@
 
 @media(max-width: 768px) {
     .facts__item {
+        display: flex;
         flex-direction: column;
+        padding-right: 0;
+        min-height: none;
+        max-height: none;
 
         & + & {
             margin-top: 15px;
@@ -99,16 +114,23 @@
     }
 
     .facts__content {
-        flex-direction: row;
+        order: 2;
+        display: flex;
+        width: 100%;
+        padding: 15px;
+        position: static;
+        transform: translateY(0);
     }
 
     .facts__nomber {
+        position: static;
         margin-right: 15px;
         margin-bottom: 0;
     }
 
     .facts__subTitle {
         font-size: 18px;
+        width: calc(100% - 64px);
 
         & span {
             margin-top: 5px;
@@ -117,6 +139,7 @@
     }
 
     .facts__media {
+        position: static;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -131,14 +154,6 @@
 }
 
 @media(max-width: 480px) {
-    .facts__item {
-        &_right {
-            & .facts__content {
-                order: 0;
-            }
-        }
-    }
-
     .facts__nomber {
         margin-right: 15px;
         font-size: 50px;
@@ -147,6 +162,7 @@
     .facts__subTitle {
         font-size: 16px;
         line-height: 1;
+        width: calc(100% - 64px);
 
         & span {
             font-size: 14px;

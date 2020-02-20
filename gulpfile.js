@@ -14,7 +14,7 @@ gulp.task('sass', function () {
     .pipe(sass().on('error', sass.logError))
     .pipe(concatCss('style.css'))
     .pipe(autoprefixer({
-      overrideBrowserslist: ['last 4 versions'],
+      overrideBrowserslist: ['last 8 versions'],
       cascade: false
     }))
     .pipe(gulp.dest('src/css'))

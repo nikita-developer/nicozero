@@ -152,3 +152,32 @@
         background-image: url('../media/face/product-480.png');
     }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .face__title,
+    .order__price,
+    .question__subTitle,
+    .step__subTitle,
+    .product__title,
+    .step__subTitle,
+    .product__title,
+    .professional__title,
+    .reviews__title,
+    .support__title,
+    .step__name,
+    .product__name,
+    .support__subTitle {
+        background: transparent !important;
+        color: #171717 !important;
+
+        & span {
+            background: transparent !important;
+            color: #171717 !important;
+
+            &:last-child {
+                color: #171717 !important;
+                background: transparent !important;
+            }
+        }
+    }
+}

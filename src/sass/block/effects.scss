@@ -7,7 +7,6 @@
 .effects__box {
     position: relative;
     max-width: 480px;
-    z-index: 2;
 }
 
 .effects__title {
@@ -62,65 +61,78 @@
 }
 
 .effects__media {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     position: absolute;
     bottom: -210px;
     right: -320px;
-    transition: 3s opacity;
+    width: 1071px;
+    height: 917px;
 
     &:hover {
         & .effects__fadeLine {
             transform: translateY(800px);
         }
-
-        & .effects__face {
-            animation: spin 1s linear;
-            animation-fill-mode: forwards;
-        }
     }
 }
 
 .effects__face {
-    width: 1071px;
-    height: 917px;
-    background-image: url('../media/effects/human1.png');
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-position: right bottom;
-    animation: spin2 1s linear;
+
+    &_before {
+        background-image: url('../media/effects/human1.png');
+    }
+
+    &_after {
+        display: none;
+        background-image: url('../media/effects/human2.png');
+    }
 }
 
 .effects__fadeLine {
     position: absolute;
+    z-index: 1;
+    left: 0;
+    width: 100%;
     transform: translateY(40px);
     transition: 1s transform;
+    text-align: center;
+
+    & img {
+        display: inline-block;
+    }
 }
 
 @media(max-width: 1280px) {
 
     .effects__media {
         right: 0;
+        width: 500px;
+        height: 430px;
 
         &:hover {
             & .effects__fadeLine {
                 transform: translateY(400px);
             }
-
-            & .effects__face {
-                animation: spin-1280 1s linear;
-                animation-fill-mode: forwards;
-            }
         }
     }
 
     .effects__face {
-        width: 500px;
-        height: 430px;
-        background-image: url('../media/effects/human1-1280.png');
-        animation: spin2-1280 1s linear;
-    }
+        position: absolute;
+        height: 100%;
 
+        &_before {
+            background-image: url('../media/effects/human1-1280.png');
+        }
+
+        &_after {
+            background-image: url('../media/effects/human2-1280.png');
+        }
+    }
     .effects__title {
         font-size: 24px;
 
@@ -190,27 +202,32 @@
         display: none;
     }
 
+    .effects__fadeLine {
+        left: 12px;
+    }
+
     .effects__media {
         position: static;
+        height: 300px;
 
         &:hover {
             & .effects__fadeLine {
-                transform: translateY(240px);
-            }
-
-            & .effects__face {
-                animation: spin-480 1s linear;
-                animation-fill-mode: forwards;
+                transform: translateY(260px);
             }
         }
     }
 
     .effects__face {
-        width: 320px;
-        height: 276px;
-        background-image: url('../media/effects/human1-480.png');
-        animation: spin2-480 1s linear;
+        position: static;
         background-position: center bottom;
+
+        &_before {
+            background-image: url('../media/effects/human1-480.png');
+        }
+
+        &_after {
+            background-image: url('../media/effects/human2-480.png');
+        }
     }
 }
 
@@ -234,58 +251,8 @@
     .effects__description {
         font-size: 34px;
     }
-}
 
-@keyframes spin {
-    0% {
-
-    }
-    100% {
-        background-image: url('../media/effects/human2.png');
-    }
-}
-
-@keyframes spin2 {
-    0% {
-        background-image: url('../media/effects/human2.png');
-    }
-    100% {
-        background-image: url('../media/effects/human1.png');
-    }
-}
-
-@keyframes spin-1280 {
-    0% {
-
-    }
-    100% {
-        background-image: url('../media/effects/human2-1280.png');
-    }
-}
-
-@keyframes spin2-1280 {
-    0% {
-        background-image: url('../media/effects/human2-1280.png');
-    }
-    100% {
-        background-image: url('../media/effects/human1-1280.png');
-    }
-}
-
-@keyframes spin-480 {
-    0% {
-
-    }
-    100% {
-        background-image: url('../media/effects/human2-480.png');
-    }
-}
-
-@keyframes spin2-480 {
-    0% {
-        background-image: url('../media/effects/human2-480.png');
-    }
-    100% {
-        background-image: url('../media/effects/human1-480.png');
+    .effects__media {
+        display: none;
     }
 }

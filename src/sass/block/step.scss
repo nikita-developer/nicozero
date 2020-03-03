@@ -9,10 +9,10 @@
 }
 
 .step__subTitle {
-    background: linear-gradient(45deg, #43a8c5, #53b44e);
+    background-image: linear-gradient(45deg, #43a8c5, #53b44e);
     color: #0B2349;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;color: #171717;
     font-size: 61px;
     line-height: 57px;
     font-weight: 800;
@@ -54,10 +54,10 @@
     margin-bottom: 14px;
     font-size: 20px;
     font-weight: 600;
-    background: linear-gradient(45deg, #43a8c5, #53b44e);
+    background-image: linear-gradient(45deg, #43a8c5, #53b44e);
     color: #0B2349;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;color: #171717;
 }
 
 .step__line {
@@ -66,7 +66,7 @@
     border-radius: 25px;
     background-color: #fff;
     background: rgb(70,170,179);
-    background: linear-gradient(to right, rgba(70,170,179,1) 0%, rgba(148,216,222,1) 31%, rgba(255,255,255,1) 100%);
+    background-image: linear-gradient(to right, rgba(70,170,179,1) 0%, rgba(148,216,222,1) 31%, rgba(255,255,255,1) 100%);
 }
 
 .step__description {

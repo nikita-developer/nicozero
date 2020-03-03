@@ -7,10 +7,10 @@
 .support__title {
     margin-bottom: 20px;
     display: inline-block;
-    background: linear-gradient(45deg, #43a8c5 33%, #53b44e);
+    background-image: linear-gradient(45deg, #43a8c5 33%, #53b44e);
     color: #0B2349;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;color: #171717;
     font-size: 61px;
     line-height: 57px;
     font-weight: 800;
@@ -34,7 +34,7 @@
     align-items: center;
     padding: 15px;
     background: rgb(69,169,182);
-    background: linear-gradient(rgba(69,169,182,1) 0%, rgba(81,178,94,1) 100%);
+    background-image: linear-gradient(rgba(69,169,182,1) 0%, rgba(81,178,94,1) 100%);
     cursor: pointer;
 
     & > span {
@@ -97,10 +97,10 @@
 .support__subTitle {
     margin-bottom: 20px;
     display: inline-block;
-    background: linear-gradient(45deg, #43a8c5 33%, #53b44e);
+    background-image: linear-gradient(45deg, #43a8c5 33%, #53b44e);
     color: #0B2349;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;color: #171717;
     font-size: 61px;
     line-height: 57px;
     font-weight: 800;
@@ -124,13 +124,13 @@
     font-weight: 700;
     text-align: center;
     background: rgb(69,169,182);
-    background: linear-gradient(to right, #43a8c5 0%, #53b44e 100%);
+    background-image: linear-gradient(to right, #43a8c5 0%, #53b44e 100%);
     transition: .3s background;
     cursor: pointer;
 
     &:hover {
         background: rgb(83,180,78);
-        background: linear-gradient(to right, rgba(83,180,78,1) 0%, rgba(67,168,197,1) 100%);
+        background-image: linear-gradient(to right, rgba(83,180,78,1) 0%, rgba(67,168,197,1) 100%);
     }
 }
 

@@ -27,10 +27,10 @@
         &:last-child {
             font-weight: 800;
             display: table;
-            background: linear-gradient(45deg, #43a8c5 33%, #53b44e);
+            background-image: linear-gradient(45deg, #43a8c5 33%, #53b44e);
             color: #0B2349;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            -webkit-text-fill-color: transparent;color: #171717;
         }
     }
 }
@@ -181,3 +181,37 @@
         }
     }
 }
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) {
+
+    .face__title,
+    .order__price,
+    .question__subTitle,
+    .step__subTitle,
+    .product__title,
+    .step__subTitle,
+    .product__title,
+    .professional__title,
+    .reviews__title,
+    .support__title,
+    .step__name,
+    .product__name,
+    .support__subTitle {
+        background: transparent !important;
+        color: #171717 !important;
+        -webkit-text-fill-color: #171717 !important;
+
+        & span {
+            background: transparent !important;
+            color: #171717 !important;
+            -webkit-text-fill-color: #171717 !important;
+
+            &:last-child {
+                color: #171717 !important;
+                background: transparent !important;
+                -webkit-text-fill-color: #171717 !important;
+            }
+        }
+    }
+}}

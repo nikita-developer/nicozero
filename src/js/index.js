@@ -28,4 +28,10 @@ $(document).ready(function() {
         $(this).next('.support__description').slideToggle()
         $(this).children('.support__indikator').toggleClass('support__indikator_active')
     })
+
+    $('.support__btn').click(function () {
+        $('html').animate({
+            scrollTop: $('.face__box_scroll .order').offset().top
+        });
+    })
 });

@@ -181,6 +181,7 @@
         &_product {
             padding-top: 50px;
             background-image: url("../media/section/product-1280.png");
+            background-position: center;
         }
 
         &_footer {
@@ -230,7 +231,7 @@
         }
 
         &_product {
-            background-image: url("../media/section/product-768.jpg");
+            background-image: none;
         }
 
         &_fake {
@@ -289,7 +290,6 @@
             padding-top: 25px;
             padding-bottom: 25px;
             margin-top: 0;
-            background-image: none;
         }
 
         &_professional {

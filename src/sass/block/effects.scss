@@ -84,12 +84,12 @@
     background-position: right bottom;
 
     &_before {
-        background-image: url('../media/effects/human1.png');
+        background-image: url('../media/effects/man1.png');
     }
 
     &_after {
         display: none;
-        background-image: url('../media/effects/human2.png');
+        background-image: url('../media/effects/man2.png');
     }
 }
 
@@ -126,11 +126,11 @@
         height: 100%;
 
         &_before {
-            background-image: url('../media/effects/human1-1280.png');
+            background-image: url('../media/effects/man1-1280.png');
         }
 
         &_after {
-            background-image: url('../media/effects/human2-1280.png');
+            background-image: url('../media/effects/man2-1280.png');
         }
     }
     .effects__title {
@@ -222,11 +222,11 @@
         background-position: center bottom;
 
         &_before {
-            background-image: url('../media/effects/human1-480.png');
+            background-image: url('../media/effects/man1-768.png');
         }
 
         &_after {
-            background-image: url('../media/effects/human2-480.png');
+            background-image: url('../media/effects/man2-768.png');
         }
     }
 }

@@ -4,3 +4,23 @@
     font-size: 13px;
     color: #b0b0b0;
 }
+
+.footer_leadbit {
+    display: block;
+    line-height: 1.6;
+
+    & a {
+        text-decoration: underline;
+        color: #b0b0b0;
+    }
+}
+
+@media(max-width: 480px) {
+    .footer_leadbit {
+        font-size: 14px;
+
+        & a {
+            font-size: inherit;
+        }
+    }
+}

@@ -12,7 +12,7 @@ $(document).ready(function() {
     );
     wow.init();
 
-    $('.js-effects__media').hover(function() {
+    $('.js-effects__hover').hover(function() {
         $('.effects__face_before').stop().fadeOut(1000)
         $('.effects__face_after').stop().fadeIn(1000)
     }, function() {

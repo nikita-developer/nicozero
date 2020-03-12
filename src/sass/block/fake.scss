@@ -1,13 +1,15 @@
 
 .fake {
     position: relative;
-    padding-right: 400px;
+    padding-right: 450px;
     display: flex;
     max-height: 366px;
     border-radius: 7px;
     border: 3px solid #e12355;
-    background: #fff;
-    background-image: linear-gradient(103deg, rgba(255,255,255,1) 61%, rgba(225,35,85,1) 61%, rgba(225,35,85,1) 100%);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-image: url('../media/fake/bg.png');
+    background-position: right center;
 }
 
 .fake__box {

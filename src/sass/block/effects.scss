@@ -6,6 +6,7 @@
 
 .effects__box {
     position: relative;
+    z-index: 1;
     max-width: 480px;
 }
 
@@ -13,6 +14,8 @@
     font-size: 26px;
     font-weight: 600;
     margin-bottom: 10px;
+    text-transform: uppercase;
+    line-height: 1.2;
 
     & > span {
         font-size: 26px;
@@ -28,8 +31,9 @@
 .effects__subtitle {
     font-size: 50px;
     font-weight: 600;
-    line-height: .8;
+    line-height: 50px;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .effects__description {
@@ -37,7 +41,8 @@
     font-size: 86px;
     color: #ef265a;
     font-weight: 800;
-    line-height: .8;
+    line-height: 80px;
+    text-transform: uppercase;
 }
 
 .effects__events {
@@ -66,9 +71,19 @@
     right: -320px;
     width: 1071px;
     height: 917px;
+}
+
+.effects__hover {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    width: 400px;
+    height: 100%;
+    margin-left: -200px;
 
     &:hover {
-        & .effects__fadeLine {
+        & + .effects__fadeLine {
             transform: translateY(800px);
         }
     }
@@ -121,6 +136,11 @@
         }
     }
 
+    .effects__hover {
+        width: 240px;
+        margin-left: -120px;
+    }
+
     .effects__face {
         position: absolute;
         height: 100%;
@@ -143,10 +163,12 @@
 
     .effects__subtitle {
         font-size: 34px;
+        line-height: 1.2;
     }
 
     .effects__description {
         font-size: 48px;
+        line-height: 1.2;
     }
 
     .effects__box {
@@ -207,8 +229,13 @@
     }
 
     .effects__media {
-        position: static;
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        bottom: auto;
         height: 300px;
+        width: auto;
 
         &:hover {
             & .effects__fadeLine {

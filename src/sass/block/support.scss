@@ -92,6 +92,7 @@
 .support__callback {
     margin-top: 140px;
     max-width: 390px;
+    margin-left: 75px;
 }
 
 .support__subTitle {
@@ -137,7 +138,7 @@
 .support__media {
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 75px;
     width: 455px;
     height: 636px;
     background-image: url('../media/support/human.png');

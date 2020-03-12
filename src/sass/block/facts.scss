@@ -1,14 +1,12 @@
 
 .facts__item {
     position: relative;
-    padding-right: 429px;
     margin-left: -110px;
     background-color: #fff;
     border: 3px solid #ef265a;
     border-radius: 7px;
     font-weight: 500;
-    min-height: 371px;
-    max-height: 371px;
+    box-shadow: 15px 16px 13px 0px #e2e2e2;
 
     & + & {
         margin-top: 50px;
@@ -18,31 +16,37 @@
         margin-left: 0;
         margin-right: -110px;
 
+        & .facts__media {
+            right: auto;
+            left: 0;
+        }
+
         & .facts__content {
-            order: 1;
+            padding: 45px 82px 45px 606px;
         }
     }
 }
 
 .facts__content {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: calc(100% - 429px);
-    padding: 45px 45px 45px 150px;
+    display: flex;
+    align-items: center;
+    padding: 45px 527px 45px 150px;
+    height: 365px;
 }
 
 .facts__nomber {
     position: absolute;
-    left: 45px;
-    top: 50px;
-    margin-right: 40px;
+    top: 5px;
+    left: -113px;
+    width: 90px;
     font-size: 112px;
     color: #e6e6e6;
     line-height: .75;
+    text-align: right;
 }
 
 .facts__subTitle {
+    position: relative;
     font-size: 26px;
     line-height: 32px;
     color: #ef265a;
@@ -60,7 +64,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    min-width: 429px;
+    width: 429px;
 }
 
 @media(max-width: 1280px) {
@@ -70,17 +74,24 @@
 
         &_right {
             margin-right: 0;
+
+            & .facts__content {
+                padding: 15px 15px 15px 365px;
+            }
         }
     }
 
     .facts__content {
-        padding: 15px 15px 15px 70px;
+        height: 298px;
+        padding: 15px 365px 15px 15px;
     }
 
     .facts__nomber {
-        top: 15px;
-        left: 15px;
+        top: -50px;
+        left: 0;
+        width: auto;
         font-size: 60px;
+        text-align: left;
     }
 
     .facts__subTitle {
@@ -111,26 +122,31 @@
         & + & {
             margin-top: 15px;
         }
+
+        &_right {
+            & .facts__content {
+                padding: 15px;
+            }
+        }
     }
 
     .facts__content {
+        align-items: flex-start;
         order: 2;
-        display: flex;
-        width: 100%;
+        height: auto;
         padding: 15px;
         position: static;
         transform: translateY(0);
     }
 
     .facts__nomber {
-        position: static;
-        margin-right: 15px;
-        margin-bottom: 0;
+        top: 0;
+        left: 0;
     }
 
     .facts__subTitle {
         font-size: 18px;
-        width: calc(100% - 64px);
+        padding-left: 64px;
 
         & span {
             margin-top: 5px;
@@ -162,7 +178,6 @@
     .facts__subTitle {
         font-size: 16px;
         line-height: 1;
-        width: calc(100% - 64px);
 
         & span {
             font-size: 14px;
